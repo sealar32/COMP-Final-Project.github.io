@@ -1,1 +1,87 @@
-filler
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sean Larson - A4 Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="#">A Marvelous Website</a>
+        <button class="navbar-burger" type="button"
+                aria-label="menu" aria-expanded="false"
+                aria-controls="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </button>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="#">Home</a>
+            <a class="navbar-item" href="#">Events</a>
+            <a class="navbar-item" href="#">About</a>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <a class="button is-primary" href="#">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</nav>
+</header>
+
+<main class="maincontent">
+    <div class="uppermain">
+        <div class="welcomebox">
+            <h1 class="welcomemsg subtitle is-2">Welcome!</h1>
+            <h2 class="welcomemsg2 subtitle is-4">We're glad you're here!</h2>
+            <button id="learn-more" class="button is-primary">Learn More</button>
+        </div>
+
+        <div class="mailinglist">
+            <form id="mailing-form">
+                <h3 class="mailingmsg">Join our mailing list for updates!</h3>
+
+                <div class="text-box">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="text-box">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                
+                <button id="gradient" class="button is-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="lowermain">
+        <img class="images" src="assets/andrew-sterling-c9JsKh6G1bo-unsplash.jpg" alt="An evening picture of the Grand Canyon, AZ, USA.">
+        <img class="images" src="assets/strange-happenings-IkFZ4-MHpMA-unsplash.jpg" alt="A snowy picture of Flagstaff, AZ, USA.">
+        <img class="images" src="assets/dulcey-lima-Md-rgK-zwgU-unsplash.jpg" alt="An evening picture of Saguaro Cacti in AZ, USA.">
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        <p>&copy; Sean Larson - COMP 110</p>
+        <p>Photos by Strange Happenings, Dulcey Lima, and Andrew Sterling on Unspash </p>
+    </div>
+</footer>
+
+<script src="javascript/navbar.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+:root {
+    --bulma-primary-h: 204deg;
+    --bulma-primary-s: 61%;
+    --bulma-primary-l: 56%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.navbar, .navbar-menu {
+    background-color: #4B9CD3;
+}
+
+.navbar {
+    --bulma-navbar-item-color: black;
+    --bulma-navbar-burger-color: black;
+}
+
+.navbar-brand .navbar-item {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.button .is-primary {
+    --bulma-button-radius: 0;
+}
+
+body {
+    font-size: 1rem;
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.maincontent {
+    flex: 1;
+    display: grid;
+    grid-template: 1fr;
+    padding: 50px 10px 0;
+    gap: 5rem;
+}
+
+.welcomebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    padding: 2rem 1rem;
+    margin: 0;
+    gap: 20px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / .15);
+}
+
+#learn-more:hover, #learn-more:focus {
+    background-color: #EE6352;
+}
+
+.mailinglist {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 5px rgb(0 0 0 / .15);
+}
+
+#mailing-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    gap: 1rem;
+}
+
+.text-box {
+    display: grid;
+    gap: 0.2rem;
+}
+
+.text-box input {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 0.5rem;
+    border: 1px solid #555;
+    background-color: white;
+    color: black;
+    font: inherit;
+    transition: background-color 200ms;
+    border-radius: 0.2rem;
+}
+
+.text-box input:hover, .text-box input:focus {
+    outline: 2px solid #EE6352;
+    border: none;
+}
+
+.uppermain {
+    display:grid;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.lowermain {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    padding: 5px 10px;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / .15);
+}
+
+.footer {
+    margin-top: 30px;
+    padding: 0.75rem 1rem;
+    background-color: #4B9CD3;
+}
+
+.images {
+    width: 100%;
+    height: auto;
+    border-radius: 0.2rem;
+}
+
+.images:hover, .images:focus {
+    animation: hover 600ms;
+}
+
+@keyframes hover {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.05;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .uppermain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+    }
+
+    .mailinglist {
+        align-items: center;
+        height: auto;
+    }
+
+    .lowermain {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#gradient {
+    background-color: #4B9CD3;
+    background-image: linear-gradient(to right, #4B9CD3, #EE6352);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    transition: background-position 800ms linear;
+}
+
+#gradient:hover, #gradient:focus {
+    background-position: 1000px 0;
+}
